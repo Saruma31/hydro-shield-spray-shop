@@ -1,8 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Package, Search, Info, Truck } from 'lucide-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSprayCan } from '@fortawesome/free-solid-svg-icons';
 
 const ProductPage: React.FC = () => {
   const { t } = useLanguage();
@@ -54,13 +52,12 @@ const ProductPage: React.FC = () => {
               </div>
 
               {/* Right Product Visual */}
-              <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner w-full h-full flex items-center justify-center">
-                <div className="bg-white rounded-xl p-8 text-center shadow-lg flex flex-col items-center space-y-6">
-                  <div className="text-8xl">
-                    <FontAwesomeIcon icon={faSprayCan} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">HydroSpray</h3>
-                  <p className="text-gray-600">Premium Formula</p>
+              <div className="flex items-center justify-center animate-fade-in">
+                <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner">
+                  <div className="bg-white rounded-xl p-8 text-center shadow-lg">
+                    <div className="text-8xl mb-6">💧</div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">HydroSpray</h3>
+                    <p className="text-gray-600">Premium Formula</p>
                 </div>
               </div>
             </div>
