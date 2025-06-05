@@ -67,7 +67,7 @@ const ProductPage: React.FC = () => {
                   <div className="bg-white rounded-xl p-8 text-center shadow-lg">
                     <div className="mb-6">
                       <img
-                        src="https://i.imgur.com/yCj4WhD.png"
+                        src="https://i.imgur.com/4Uj8W7p.png"
                         alt="HydroSpray"
                         className="w-24 h-24 mx-auto object-contain"
                       />
