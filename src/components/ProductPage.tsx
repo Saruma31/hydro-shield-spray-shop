@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Package, Search, Info, Truck } from 'lucide-react';
@@ -9,20 +8,20 @@ const ProductPage: React.FC = () => {
   const benefits = [
     {
       icon: <Package className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.1')
+      text: t('product.benefits.1'),
     },
     {
       icon: <Search className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.2')
+      text: t('product.benefits.2'),
     },
     {
       icon: <Info className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.3')
+      text: t('product.benefits.3'),
     },
     {
       icon: <Truck className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.4')
-    }
+      text: t('product.benefits.4'),
+    },
   ];
 
   const ingredients = [
@@ -32,13 +31,14 @@ const ProductPage: React.FC = () => {
     t('ingredients.krypton'),
     t('ingredients.mercury'),
     t('ingredients.lotus'),
-    t('ingredients.sand')
+    t('ingredients.sand'),
   ];
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+
           {/* Product Header */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
             <div className="grid md:grid-cols-2 gap-8 p-8">
@@ -61,11 +61,17 @@ const ProductPage: React.FC = () => {
                   </button>
                 </div>
               </div>
-              
+
               <div className="flex items-center justify-center animate-fade-in">
                 <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner">
                   <div className="bg-white rounded-xl p-8 text-center shadow-lg">
-                    <div className="text-8xl mb-6">💧</div>
+                    <div className="mb-6">
+                      <img
+                        src="https://i.imgur.com/yCj4WhD.png"
+                        alt="HydroSpray"
+                        className="w-24 h-24 mx-auto object-contain"
+                      />
+                    </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">HydroSpray</h3>
                     <p className="text-gray-600">Premium Formula</p>
                   </div>
@@ -133,6 +139,7 @@ const ProductPage: React.FC = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </div>
