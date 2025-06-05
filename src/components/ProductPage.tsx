@@ -8,22 +8,10 @@ const ProductPage: React.FC = () => {
   const { t } = useLanguage();
 
   const benefits = [
-    {
-      icon: <Package className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.1')
-    },
-    {
-      icon: <Search className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.2')
-    },
-    {
-      icon: <Info className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.3')
-    },
-    {
-      icon: <Truck className="w-6 h-6 text-hydro-blue-600" />,
-      text: t('product.benefits.4')
-    }
+    { icon: <Package className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.1') },
+    { icon: <Search className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.2') },
+    { icon: <Info className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.3') },
+    { icon: <Truck className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.4') }
   ];
 
   const ingredients = [
@@ -40,10 +28,11 @@ const ProductPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          
+
           {/* Product Header */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
             <div className="grid md:grid-cols-2 gap-8 p-8">
+              {/* Left Text Column */}
               <div className="space-y-6">
                 <h1 className="text-4xl font-bold text-gray-900 animate-fade-in">
                   {t('product.name')}
@@ -64,15 +53,14 @@ const ProductPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="min-h-screen flex items-center justify-center bg-gray-50">
-                <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner max-w-md w-full">
-                  <div className="bg-white rounded-xl p-8 text-center shadow-lg flex flex-col items-center space-y-6">
-                    <div className="text-8xl">
-                      <FontAwesomeIcon icon={faSprayCan} />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900">HydroSpray</h3>
-                    <p className="text-gray-600">Premium Formula</p>
+              {/* Right Product Visual */}
+              <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner w-full h-full flex items-center justify-center">
+                <div className="bg-white rounded-xl p-8 text-center shadow-lg flex flex-col items-center space-y-6">
+                  <div className="text-8xl">
+                    <FontAwesomeIcon icon={faSprayCan} />
                   </div>
+                  <h3 className="text-2xl font-bold text-gray-900">HydroSpray</h3>
+                  <p className="text-gray-600">Premium Formula</p>
                 </div>
               </div>
             </div>
