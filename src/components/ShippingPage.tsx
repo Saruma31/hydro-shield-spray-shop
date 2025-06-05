@@ -37,7 +37,7 @@ const ShippingPage: React.FC = () => {
     { region: 'Europe', time: '5-7 days', cost: 'Free over 50 CHF' },
     { region: 'Asia Pacific', time: '7-10 days', cost: '15 CHF' },
     { region: 'Americas (except USA)', time: '10-14 days', cost: '25 CHF' },
-    { region: 'Africa & Middle East', time: '12-16 days', cost: '30 CHF' },
+    { region: 'Australia', time: '12-16 days', cost: '30 CHF' },
   ];
 
   return (
