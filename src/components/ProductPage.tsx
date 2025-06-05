@@ -1,7 +1,8 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Package, Search, Info, Truck } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSprayCan } from '@fortawesome/free-solid-svg-icons';
 
 const ProductPage: React.FC = () => {
   const { t } = useLanguage();
@@ -39,6 +40,7 @@ const ProductPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+          
           {/* Product Header */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
             <div className="grid md:grid-cols-2 gap-8 p-8">
@@ -61,12 +63,14 @@ const ProductPage: React.FC = () => {
                   </button>
                 </div>
               </div>
-              
-              <div className="flex items-center justify-center animate-fade-in">
-                <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner">
-                  <div className="bg-white rounded-xl p-8 text-center shadow-lg">
-                    <div className="text-8xl mb-6">💧</div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">HydroSpray</h3>
+
+              <div className="min-h-screen flex items-center justify-center bg-gray-50">
+                <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner max-w-md w-full">
+                  <div className="bg-white rounded-xl p-8 text-center shadow-lg flex flex-col items-center space-y-6">
+                    <div className="text-8xl">
+                      <FontAwesomeIcon icon={faSprayCan} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">HydroSpray</h3>
                     <p className="text-gray-600">Premium Formula</p>
                   </div>
                 </div>
@@ -133,6 +137,7 @@ const ProductPage: React.FC = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </div>
