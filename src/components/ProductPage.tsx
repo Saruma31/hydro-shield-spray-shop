@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Package, Search, Info, Truck } from 'lucide-react';
@@ -6,10 +7,22 @@ const ProductPage: React.FC = () => {
   const { t } = useLanguage();
 
   const benefits = [
-    { icon: <Package className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.1') },
-    { icon: <Search className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.2') },
-    { icon: <Info className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.3') },
-    { icon: <Truck className="w-6 h-6 text-hydro-blue-600" />, text: t('product.benefits.4') }
+    {
+      icon: <Package className="w-6 h-6 text-hydro-blue-600" />,
+      text: t('product.benefits.1')
+    },
+    {
+      icon: <Search className="w-6 h-6 text-hydro-blue-600" />,
+      text: t('product.benefits.2')
+    },
+    {
+      icon: <Info className="w-6 h-6 text-hydro-blue-600" />,
+      text: t('product.benefits.3')
+    },
+    {
+      icon: <Truck className="w-6 h-6 text-hydro-blue-600" />,
+      text: t('product.benefits.4')
+    }
   ];
 
   const ingredients = [
@@ -26,11 +39,9 @@ const ProductPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-
           {/* Product Header */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
             <div className="grid md:grid-cols-2 gap-8 p-8">
-              {/* Left Text Column */}
               <div className="space-y-6">
                 <h1 className="text-4xl font-bold text-gray-900 animate-fade-in">
                   {t('product.name')}
@@ -50,14 +61,14 @@ const ProductPage: React.FC = () => {
                   </button>
                 </div>
               </div>
-
-              {/* Right Product Visual */}
+              
               <div className="flex items-center justify-center animate-fade-in">
                 <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner">
                   <div className="bg-white rounded-xl p-8 text-center shadow-lg">
                     <div className="text-8xl mb-6">💧</div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">HydroSpray</h3>
                     <p className="text-gray-600">Premium Formula</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,7 +133,6 @@ const ProductPage: React.FC = () => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </div>
