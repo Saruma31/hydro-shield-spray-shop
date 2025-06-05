@@ -85,10 +85,16 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
                   </button>
                 </div>
               </div>
-              <div className="relative animate-fade-in">
-                <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-8 shadow-xl">
-                  <div className="bg-white rounded-xl p-6 text-center">
-                    <div className="text-6xl mb-4">💧</div>
+              <div className="flex items-center justify-center animate-fade-in">
+                <div className="bg-gradient-to-br from-hydro-blue-100 to-hydro-blue-200 rounded-2xl p-12 shadow-inner">
+                  <div className="bg-white rounded-xl p-8 text-center shadow-lg">
+                    <div className="mb-6">
+                      <img
+                        src="https://i.imgur.com/yCj4WhD.png"
+                        alt="HydroSpray"
+                        className="w-24 h-24 mx-auto object-contain"
+                      />
+                    </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">HydroSpray</h3>
                     <p className="text-gray-600">Hydrophobic Surface Technology</p>
                   </div>
